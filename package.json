@@ -1,0 +1,23 @@
+{
+  "name": "backups",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local:backup": "cross-env node index.mjs",
+    "local:restore": "cross-env node index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-codedeploy": "^3.969.0",
+    "@aws-sdk/client-s3": "^3.969.0",
+    "@aws-sdk/client-secrets-manager": "^3.971.0",
+    "@aws-sdk/lib-storage": "^3.969.0"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
+}
