@@ -29,9 +29,9 @@ s3://your-backup-bucket/backups/applicationName/deploymentId.archive
 }
 ```
 
-### Envinment Variables
+### Environment Variables
 
-- `MONGO_URI_SECRET_ID`: used to connect to your db to perform `mongodump` and `mongorestore`
+- `MONGO_URI_SECRET_ID`: used to connect to your db to perform `mongodump` and `mongorestore`. This should align with a JSON in **AWS SecretsManager** with `{ mongo_uri }`
 - `BUCKET_NAME`
 - `AWS_REGION`
 
